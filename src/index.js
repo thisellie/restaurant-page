@@ -1,2 +1,6 @@
-console.log('Hello everyone!')
+import 'normalize.css'
+import './style.css'
+import home from './home'
+
+home()
 

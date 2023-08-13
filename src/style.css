@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('./fonts/LibreBaskerville-Regular.ttf'),
+    url('./fonts/LibreBaskerville-Bold.ttf')
+      url('./fonts/LibreBaskerville-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url('./fonts/SourceSans3-Regular.ttf'),
+    url('./fonts/SourceSans3-Bold.ttf'), url('./fonts/SourceSans3-Light.ttf');
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  height: 100px;
+  padding: 0 2em;
+  align-items: center;
+}
+
+ul {
+  padding-left: 0;
+  gap: 25px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: 'Libre Baskerville';
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  width: min(900px);
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+main img {
+  height: 250px;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+main article h1 {
+  margin-bottom: 0;
+}
+
+main article h3,
+main article button {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: lighter;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
